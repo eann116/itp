@@ -44,3 +44,20 @@ My code now is
 
 PROBLEMS: The numbers where fizz and buzz and fizzBuzz are are still there, and when there are multiples of 3 and 5, all words are present.
 
+####FINAL
+I realized if I make the first part of the function an if, but the rest else if, and then the last one for all other values of i an else function, it would get rid of repeats and doubles of numbers or words. The final code was 
+
+`for (let i = 1; i <= 100; i+=1) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log ("fizzBuzz"); 
+    }
+  else if (i % 3 === 0) {
+    console.log("fizz");
+    }
+  else if (i % 5 === 0) {
+    console.log ("buzz");
+    } 
+  else {
+    console.log(i);
+    }
+}`
