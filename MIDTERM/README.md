@@ -10,8 +10,8 @@
   createCanvas(150, 150);
   noStroke();
 }
-
-function draw() {
+`
+`function draw() {
  fill(0);
   rect(40, 10,  70, 5); 
   rect(40, 105,  70, 5);
