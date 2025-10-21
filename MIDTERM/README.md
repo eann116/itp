@@ -1,7 +1,8 @@
-#DOCUMENTATION FILE
-####Midterm
+# DOCUMENTATION FILE
 
-#####Phase 2
+#### Midterm
+
+##### Phase 2
 - Drew the border of the speaker image, and played around with the height and width of the image.
 - I knew the speaker should be taller than wider, so the width was 70 and the height was 100
 
@@ -25,7 +26,7 @@
 - The top ellipse is smaller than the bottom one, hence 40 and 80
 - the measurements are just what I played around with to make it seem as close to my image as possible
 
-#####Phase 3
+##### Phase 3
 
 - I created the function `drawObject` and placed all my code from phase 2 into it. At first, I thought replacing draw with drawObject would work, but nothing appeared.
 
@@ -38,7 +39,7 @@ Then I copied this into the code
 ...and the two images of the speaker appeared.
 I wrote the rest of the code, including translate and scale, and for the time being used 0.5 as my scale for the image.
 
-#####Phase 4
+##### Phase 4
 
 To create the nested-for loop part of the function, I used what I learned from the fizzBuzz assignment. 
 
