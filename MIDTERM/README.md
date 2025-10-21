@@ -30,10 +30,8 @@
 - I created the function `drawObject` and placed all my code from phase 2 into it. At first, I thought replacing draw with drawObject would work, but nothing appeared.
 
 Then I copied this into the code
-`function draw(){
-  
+`function draw(){ 
   drawObject (0, 0, 1)
-  
   drawObject (0, 200, 1)
 }`
 
@@ -49,8 +47,7 @@ I swapped out i for x and wrote my parameters for x. Knowing that the canvas was
 - This resulted in only one line of images on the top horizontal and the left vertical.
 After putting the two for loops together, the code produced the entire array of images like planned.
 
-`function draw(){
-  
+`function draw(){ 
   for (x = 0 ; x<=400 ; x+=40) {
       drawObject(x, 0, 1)
   for (y = 0 ; y<=400 ; y+=40){
