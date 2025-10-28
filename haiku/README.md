@@ -16,3 +16,4 @@ if you have done so, sit back down
 
 ![name of image] (link of image)
 has to be in the same sub folder
+
