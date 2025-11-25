@@ -21,4 +21,4 @@ I came through small problems like being in the right `pwd` or installing into t
 ### Second Idea: Markov Chain Model
 With a suggestion from my friend Chris, he said that the Markov Model would prove to be a lot easier with similar results. In this scenario,
 
-[Alt text](Screenshot 2025-11-25 at 12.55.46 AM)
+![Alt text](Screenshot 2025-11-25 at 12.55.46 AM)

@@ -25,7 +25,7 @@ def generate_lyrics(corpus_path, genre, num_lines):
     lyrics_str = "\n".join(generated_lines)
     return f"{title}\n\n{lyrics_str}"
 
-corpus_path = 'all_lyrics_only.txt'
+corpus_path = 'all_lyrics_onlytwo.txt'
 genre = 'pop' 
 num_lines = 20  
 
