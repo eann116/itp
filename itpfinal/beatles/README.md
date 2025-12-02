@@ -19,6 +19,13 @@ I came through small problems like being in the right `pwd` or installing into t
 
 
 ### Second Idea: Markov Chain Model
-With a suggestion from my friend Chris, he said that the Markov Model would prove to be a lot easier with similar results. In this scenario,
+With a suggestion from my friend Chris, he said that the Markov Model would prove to be a lot easier with similar results. In this scenario, we use the Markov model to predict the next words in dataset, which creates essentially a new line of lyrics.
+
+The BIGGER the dataset, the more variety of lyrics there can be.
+
+Here is where the biggest errors occurred.
+
+#### .csv file into .txt file into *neither*
+
 
 ![Alt text](Screenshot 2025-11-25 at 12.55.46 AM)
