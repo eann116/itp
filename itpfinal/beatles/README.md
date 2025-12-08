@@ -37,3 +37,6 @@ I tried a variety of python functions here to fix this issue, `deepmultilingualp
 ##### SOLUTION
 I took another approach, going to https://genius.com and taking lyrics from their database, and putting them in one by one myself. The code works!
 
+Here is the code!
+![alt text](https://github.com/eann116/itp/blob/main/itpfinal/beatles/Screenshot%202025-12-08%20at%202.41.34%E2%80%AFPM.png)
+
