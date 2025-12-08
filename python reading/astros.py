@@ -13,3 +13,4 @@ with open("iss.txt", "w") as file:
     file.write(f"There are currently {result['number']} astronauts on the ISS:\n\n")
     for person in result["people"]:
         file.write(person["name"] + " - onboard\n")
+        

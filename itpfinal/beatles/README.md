@@ -26,6 +26,14 @@ The BIGGER the dataset, the more variety of lyrics there can be.
 Here is where the biggest errors occurred.
 
 #### .csv file into .txt file into *neither*
+In order to transition from the Taylor Swift model to the Markov Chain Model, the code uses a `corpus_text` file, a .txt file instead of a .csv file. The code takes out solely the text/lyric portions of the csv file, as the rest is not needed.
 
+![alt text](![Screenshot 2025 11 25 At 12.55.28 AM](../../../../../Desktop/Screenshot%202025-11-25%20at%2012.55.28 AM.png))
 
-![Alt text](Screenshot 2025-11-25 at 12.55.46 AM)
+Here is where the biggest issues occured. The markov chain needs to understand where sentences begin and where sentences end inside of the file, regardless whether it was a csv or a txt file. In simple terms, I needed punctuation and indents in my .txt file, something it did not have.
+
+I tried a variety of python functions here to fix this issue, `deepmultilingualpunctuator` or `punctuator` to name two. However they both ended up not working, and in all honesty, for reasons I could not even get an understanding of.
+
+##### SOLUTION
+I took another approach, going to https://genius.com and taking lyrics from their database, and putting them in one by one myself. The code works!
+
