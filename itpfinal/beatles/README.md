@@ -42,7 +42,7 @@ Here is the code!
 
 
 ### Step 2: Make a GUI for the lyric generation code
-I wanted to create a little interface where you can generate and hear the lyrics that were created. The interface would have a button to generate the lyrics, and then a button to listen to it once it is created. I used a python installation called `pyqt6` to create buttons and create audio files for my lyrics. The code is in the gui.py file.
+I wanted to create a little interface where you can generate and hear the lyrics that were created. The interface would have a button to generate the lyrics, and then a button to listen to it once it is created. I tried using the built in `tkinter,` however I would keep getting the error of the module tkinter not existing. I realized it was because the tkinter runs on the version 3.14.2 of python, while all of my other code was running on python 3.11.4. Instead, I used a python installation called `pyqt6` to create buttons and create audio files for my lyrics. The code is in the gui.py file.
 
 I couldn't figure out how to utilize the buttons, as many times the buttons ended up not producing anything. After failing many times, I made the bold guess as to take my entire model.py code and put it into the pyqt6 code I had. That way, the buttons ended up running the code for me. Boom!
 

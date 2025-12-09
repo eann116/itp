@@ -1,5 +1,5 @@
 import markovify
-
+ 
 def load_lyrics(corpus_path):
     with open(corpus_path, 'r', encoding='utf-8') as f:
         return f.read().split('\n')
