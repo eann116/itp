@@ -31,3 +31,11 @@ num_lines = 20
 
 result = generate_lyrics(corpus_path, genre, num_lines)
 print(result)
+
+from gtts import gTTS
+import os
+
+text_to_speak = (result)
+tts = gTTS(text=text_to_speak, lang='en')
+tts.save("lyricsbyeann.mp3")
+
