@@ -32,7 +32,9 @@ In order to transition from the Taylor Swift model to the Markov Chain Model, th
 
 Here is where the biggest issues occured. The markov chain needs to understand where sentences begin and where sentences end inside of the file, regardless whether it was a csv or a txt file. In simple terms, I needed punctuation and indents in my .txt file, something it did not have.
 
-I tried a variety of python functions here to fix this issue, `deepmultilingualpunctuator` or `punctuator` to name two. However they both ended up not working, and in all honesty, for reasons I could not even get an understanding of.
+Using Google Gemini, I pasted this code to see what was the issue here. It recommended things like changing the state size, as well as recommended adding parts of the code to mediate that.
+
+After some research, I figured looking for punctuation functions. I tried a variety of python functions here to fix this issue, `deepmultilingualpunctuator` or `punctuator` to name two. However they both ended up not working, and in all honesty, for reasons I could not even get an understanding of.
 
 ##### SOLUTION
 I took another approach, going to https://genius.com and taking lyrics from their database, and putting them in one by one myself. The code works!
@@ -42,10 +44,12 @@ Here is the code!
 
 
 ### Step 2: Make a GUI for the lyric generation code
-I wanted to create a little interface where you can generate and hear the lyrics that were created. The interface would have a button to generate the lyrics, and then a button to listen to it once it is created. I tried using the built in `tkinter,` however I would keep getting the error of the module tkinter not existing. I realized it was because the tkinter runs on the version 3.14.2 of python, while all of my other code was running on python 3.11.4. Instead, I used a python installation called `pyqt6` to create buttons and create audio files for my lyrics. The code is in the gui.py file.
+I wanted to create a little interface where you can generate and hear the lyrics that were created. The interface would have a button to generate the lyrics, and then a button to listen to it once it is created. I tried using the built in `tkinter,` however I would keep getting the error of the module tkinter not existing. Gemini pointed out it was because the tkinter runs on the version 3.14.2 of python, while all of my other code was running on python 3.11.4. I could not switch the version to match tkinter, otherwise all of the 3.11.4 installations like `markovify` do not work anymore. Instead, I used a python installation called `pyqt6` to create buttons and create audio files for my lyrics. The code is in the gui.py file.
 
 I couldn't figure out how to utilize the buttons, as many times the buttons ended up not producing anything. After failing many times, I made the bold guess as to take my entire model.py code and put it into the pyqt6 code I had. That way, the buttons ended up running the code for me. Boom!
 
+### OVERALL USE OF GOOGLE GEMINI
+Google Gemini was used in the instance of helping when I got error messages, or problems that needed fixing. Some examples include when modules weren't found such as `QtWidgets` or `markovify`. Google Gemini also often recommended the writing of `print` functions to produce error messages when files or code was not present, as well as `if` and `else` statements. All the code of the project was sourced from online articles and research.
 
 
 
@@ -54,7 +58,7 @@ I couldn't figure out how to utilize the buttons, as many times the buttons ende
 - My friend Chris Miyai, a computer science major from Boston University
 - Google Gemini for troubleshooting
 	- Biggest takeaways from using AI was being able to see what was missing from my code, as well as creating error message prints. For example, if you don't generate the lyrics before hitting the listen button, Gemini suggested a print function to produce the message "Error: Audio file '{audio_file}' not found. Generate lyrics first."
-- Other research articles
+- Other research articles (GeeksforGeeks, etc.)
 
 
 
